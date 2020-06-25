@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="demo-app">
+        <div class="demo-app-main">
+          <!-- <app-secondary-calendar [daysCalendar]=0></app-secondary-calendar> -->
+          <app-secondary-calendar [event2]=event ></app-secondary-calendar>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <app-principal-calendar (propagar)="progapation($event)"></app-principal-calendar>
+    </div>
+  </div>
+</div>
